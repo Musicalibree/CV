@@ -4,110 +4,82 @@ class secondpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Personal Information")),
-        body: Column(
-          children: [
-            Text(
-              'Ernesto E. Dela Cruz Jr.',
+      appBar: AppBar(
+        title: Text("Personal Information"),
+        backgroundColor: Color.fromRGBO(236, 114, 0, 0.957),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
+            child: Text(
+              'Name: Ernesto E. Dela Cruz Jr.',
               style: TextStyle(
                 fontFamily: 'RobotoMono',
-                fontSize: 25,
-                color: Colors.orange.shade900,
+                fontSize: 19,
+                color: Colors.orange,
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 200, 0),
-              child: Text(
-                'WORK INDUSTRY:',
-                style: TextStyle(
-                    fontFamily: 'RobotoMono',
-                    fontSize: 20,
-                    color: Colors.orange.shade600),
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 100, 0),
-              child: Text(
-                'Technical Support',
-                style: TextStyle(
-                    fontFamily: 'RobotoMono',
-                    color: Colors.orange.shade900,
-                    fontSize: 25),
-              ),
-            ),
-            Divider(
-              height: 10,
-              color: Colors.orange,
-            ),
-            Text(
-              'CONTACT ME',
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+            child: Text(
+              'Age: 21 Years Old',
               style: TextStyle(
                 fontFamily: 'RobotoMono',
-                fontWeight: FontWeight.w600,
-                color: Colors.orange.shade900,
-                fontSize: 20,
+                color: Colors.orange,
+                fontSize: 19,
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.orange,
-                  ),
-                  Text(
-                    '09934594623',
-                    style: TextStyle(
-                      fontFamily: 'RobotoMono',
-                      fontSize: 18,
-                      color: Colors.orange,
-                    ),
-                  ),
-                ],
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+            child: Text(
+              'Date of Birth: June 1, 2001',
+              style: TextStyle(
+                fontFamily: 'RobotoMono',
+                color: Colors.orange,
+                fontSize: 19,
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(20, 0, 0, 10),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
-                    color: Colors.orange,
-                  ),
-                  Text(
-                    'ernestodc047@gmail.com',
-                    style: TextStyle(
-                        fontFamily: 'RobotoMono',
-                        color: Colors.orange,
-                        fontSize: 18),
-                  ),
-                  Center(
-                    child: IconButton(
-                      iconSize: 40,
-                      icon: const Icon(
-                        Icons.info,
-                        color: Colors.orange,
-                      ),
-                      onPressed: () {
-                        Navigator.pop(context);
-                        // ...
-                      },
-                    ),
-                  ),
-                ],
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+            child: Text(
+              'Add: Pantal Guibang Dagupan City',
+              style: TextStyle(
+                fontFamily: 'RobotoMono',
+                color: Colors.orange,
+                fontSize: 19,
               ),
             ),
-          ],
-        ));
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+            child: Text(
+              'Height: 170cm',
+              style: TextStyle(
+                fontFamily: 'RobotoMono',
+                color: Colors.orange,
+                fontSize: 19,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+            child: Text(
+              'Weight: 60kg',
+              style: TextStyle(
+                fontFamily: 'RobotoMono',
+                color: Colors.orange,
+                fontSize: 19,
+              ),
+            ),
+          )
+        ],
+      ),
+      backgroundColor: Colors.black,
+    );
   }
 }

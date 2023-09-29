@@ -1,9 +1,11 @@
+import 'package:cv/skills.dart';
 import 'package:flutter/material.dart';
 import 'secondpage.dart';
 import 'educ.dart';
 
 void main() {
   runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: "Curriculum Vitae",
     home: Firstpage(),
   ));
@@ -177,7 +179,7 @@ class Firstpage extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: EdgeInsets.fromLTRB(40, 30, 0, 0),
+                padding: const EdgeInsets.fromLTRB(40, 30, 0, 0),
                 child: IconButton(
                   iconSize: 40,
                   icon: const Icon(
@@ -219,7 +221,7 @@ class Firstpage extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(60, 30, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(60, 30, 0, 0),
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(
@@ -230,7 +232,7 @@ class Firstpage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => educpage(),
+                            builder: (context) => skillspage(),
                           ),
                         );
                       },
